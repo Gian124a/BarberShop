@@ -428,7 +428,7 @@ main{
 .Cart-Info{
     position: absolute;
     width: 280px;
-    height: 340px;
+    height: 320px;
     z-index: -1;
     background-color: #FFFFFF;
     display: grid;
@@ -642,6 +642,8 @@ main{
     border-bottom: 1px solid var(--ColorAzul);
     padding: 0 0 0 0;
     background-color: #d3edfd;
+    
+    
 }
 .Info-Negocio{
     position: relative;
@@ -702,6 +704,7 @@ main{
     background-color: #FFFFFF;
     display: grid;
     grid-template-rows: 100px 1fr;
+    
 }
 .Cartica::before{
     content: '';
@@ -1056,7 +1059,7 @@ footer{
     }
     .Cart-Info{
         width: 260px;
-        height: 330px;
+        height: 310px;
     }
     .Cont-Stats{
         grid-template-rows: 1fr;

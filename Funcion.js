@@ -23,16 +23,6 @@ function cerrarMenu() {
     document.body.classList.remove('no-scroll');
 }
 
-
-
-
-
-
-
-
-
-
-
  // Variable para controlar si el efecto ya se ha aplicado
 // Distancia desde el inicio de la página hasta el contenedor
 var efectoAplicado = false;
@@ -40,7 +30,7 @@ window.addEventListener('scroll', function() {
     
     let Barbero = document.getElementById('Cont-Barberos');
     let scrollPosition = window.scrollY;
-    let Distancia = Barbero.offsetTop + 100;
+    let Distancia = Barbero.offsetTop + 50;
     if (scrollPosition > Distancia && !efectoAplicado) {
         Barbero.style.opacity = '1';
         Barbero.style.top = '0';
@@ -79,7 +69,7 @@ window.addEventListener('scroll', function() {
     let Stats = document.getElementById('Cont-Stats');
     let DescripcionStats = document.getElementById('Descripcion-Stats');
     let scrollPosition = window.scrollY;
-    let Distancia = Stats.offsetTop + 100;
+    let Distancia = Stats.offsetTop + 150;
     
     // Reemplaza 300 con el valor de desplazamiento en píxeles en el que quieres que el efecto se aplique
     if (scrollPosition > Distancia && !efecticoStats && !animationApplied) {
@@ -99,7 +89,7 @@ window.addEventListener('scroll', function() {
     let Cartica = document.getElementById('Cartica');
     let Cartica2 = document.getElementById('Cartica2');
     let scrollPosition = window.scrollY;
-    let Distancia = Resenitas.offsetTop + 150;
+    let Distancia = Resenitas.offsetTop + 100;
     // Reemplaza 300 con el valor de desplazamiento en píxeles en el que quieres que el efecto se aplique
     if (scrollPosition > Distancia) {
         Titulo.style.left = '0';
@@ -112,22 +102,6 @@ window.addEventListener('scroll', function() {
         Cartica2.style.transition = '1.5s';
     }
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 function Ver(id){
     let Servicio = document.getElementById(id);
@@ -142,8 +116,8 @@ function Ver(id){
         Servicio.style.transition = '.5s';
     }
 }
-function Cerrar(){
-    let Servicio = document.getElementById('Cart-Info');
+function Cerrar(id){
+    let Servicio = document.getElementById(id);
     if(Servicio.style.opacity != '0'){
         Servicio.style.opacity = '0';
         Servicio.style.zIndex = -1;
