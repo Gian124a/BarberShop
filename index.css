@@ -650,6 +650,7 @@ main{
     grid-template-rows: 60px 1fr;
     padding-bottom: 20px;
     background-color: var(--ColorHeaderFooter);
+    overflow-x: hidden;
 }
 .Cont-Titulo-Negocio{
     position: relative;
@@ -693,6 +694,7 @@ main{
     row-gap: 60px;
     padding: 50px 0;
     z-index: 5;
+    overflow-x: hidden;
 }
 .Cartica{
     position: relative;
